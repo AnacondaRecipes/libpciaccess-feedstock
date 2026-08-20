@@ -23,7 +23,7 @@ requirements:
     - ninja-base
     - pkg-config
   host:
-    - xorg-util-macros
+    - python
 
 test:
   commands:
@@ -38,7 +38,13 @@ about:
   license_family: MIT
   license_file: COPYING
   summary: Generic PCI access library
+  description: |
+    Generic PCI access library
+  dev_url: https://gitlab.freedesktop.org/xorg/lib/libpciaccess
+  doc_url: https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/blob/master/README.md
 
 extra:
   recipe-maintainers:
     - hmaarrfk
+  skip-lints:
+    - python_build_tools_in_host
