@@ -1,7 +1,6 @@
 set -ex
 meson setup builddir \
     ${MESON_ARGS} \
-    --buildtype=release \
     --prefix=$PREFIX \
     --libdir=lib
 

@@ -48,3 +48,4 @@ extra:
     - hmaarrfk
   skip-lints:
     - python_build_tools_in_host
+    - missing_imports_or_run_test_py
