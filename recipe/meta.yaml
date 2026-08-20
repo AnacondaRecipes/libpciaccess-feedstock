@@ -24,7 +24,7 @@ requirements:
     - pkg-config
   host:
     - python
-    - zlib
+    - zlib {{ zlib }}
 
 test:
   commands:
