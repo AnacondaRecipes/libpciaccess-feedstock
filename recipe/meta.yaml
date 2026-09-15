@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('libpciaccess', max_pin='x.x') }}
 
@@ -23,7 +23,6 @@ requirements:
     - ninja-base
     - pkg-config
   host:
-    - python
     - zlib {{ zlib }}
 
 test:
